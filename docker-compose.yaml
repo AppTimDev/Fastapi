@@ -1,0 +1,12 @@
+version: "3.8"
+name: fastapi
+services:
+  app:
+    container_name: FastapiApp_c
+    build:
+      context: ./
+      dockerfile: ./Docker/Dockerfile
+    image: apptimdev/fastapi
+    ports:
+      - "8000:8000"
+    platform: linux/amd64
